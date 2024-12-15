@@ -1,0 +1,195 @@
+
+
+/* ================================EX1 ==========================*/
+.container_1{
+    margin: 50px 50px  ;
+
+}
+.container_1 span{ 
+    display: inline-block;
+    width: 50px;      /* Set the width of the box */ 
+    height: 50px;     /* Set the height of the box */ 
+    background-color: green; /* Set the background color (e.g., a shade of blue) */ 
+    border: 2px solid black;
+}
+
+.container_1 span:nth-child(odd){
+    position: relative;
+    bottom:25px;
+    background-color: yellow; /* Set the background color (e.g., a shade of blue) */ 
+margin-top:90px;
+
+}
+
+
+
+
+
+/* ================================EX2 ==========================*/
+
+.container_2{
+    margin: 50px 50px  ;
+
+}
+
+.container_2 span{ 
+    display: inline-block;
+    width: 90px;      
+    height:30px;   
+    background-color: red; 
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    margin-top:90px;
+
+}
+
+.container_2 span:nth-child(even){
+display: none; 
+
+}
+
+
+/* ================================EX3 ==========================*/
+
+.container_3 {
+    width: 32%;
+    margin:50px 50px  ;
+    }
+    
+    .container_3 span{ 
+        display: inline-block;
+        width: 40px;      
+        height:40px;   
+        background-color: green; 
+    
+    
+        border: 2px solid green; 
+        
+        font-size: 10px;
+        margin: 2px;
+    } 
+    
+    
+    
+    
+    .container_3  span:nth-child(6n +5),
+    .container_3 span:nth-child(6n +4),
+    .container_3 span:nth-child(6n +6)
+    {
+        background-color: blue; 
+        border: 2px solid blue; 
+    
+    } 
+        
+    
+    
+    /* ================================EX4 ==========================*/
+
+
+    .container_4{
+    width: 550px;
+    margin: 50px 50px;
+    }
+    
+    .container_4 span{ 
+        display: inline-block;
+        width: 40px;      
+        height:40px;   
+        background-color: rgb(190, 220, 255); 
+        border: 2px solid black;
+        margin: 1px;
+    }
+     
+   
+    
+     
+/* Select All But The First Five    */
+
+/* .container_4 span:nth-last-child(-n+6)
+{
+ background-color: orange; 
+}  */
+
+
+      
+/* Select Only The First Five */
+  
+
+/* .container_4  span:nth-last-child(n+7)
+  {
+   background-color: orange; 
+  }  */
+   
+
+     
+/* Select Every Fourth, Starting At The First */
+
+/*   
+ .container_4  span:nth-last-child(4n+4)
+  {
+   background-color: orange; 
+  }  */
+ 
+    
+/* Select The Last 5 elements */
+
+  
+ /* .container_4 span:nth-last-child(-n+5)
+  {
+   background-color: orange; 
+  }    */
+
+
+       
+/* Select the Second to Last Element */
+        .container_4  span:nth-last-child(2)
+  {
+   background-color: orange; 
+  }   
+
+
+
+
+
+/* ================================EX5 ==========================*/
+
+img{
+    width: 500px;
+    height: 300px;
+    margin: 50px 50px  ;
+
+}
+
+
+/* ================================EX6==========================*/
+
+.container_6{
+    width: 500px;
+    }
+    
+    .container_6  span{ 
+        display: inline-block;
+        width: 40px;      
+        height:40px;   
+        background-color: rgb(22, 148, 165); 
+        text-align: center;
+        color: azure;
+        border: 2px solid rgb(233, 241, 233); 
+        font-size: 20px;
+        margin: 2px;
+    
+    } 
+    
+    .container_6 span:nth-child(n):hover ~ span:nth-child(n){
+        color: red;
+    
+    }
+    
+    
+    .container_6 span:nth-child(2n):hover ~ span:nth-child(2n),
+    .container_6  span:nth-child(3n):hover ~ span:nth-child(3n),
+    .container_6 span:nth-child(4n):hover ~  span:nth-child(4n),
+    .container_6  span:nth-child(5n):hover ~span:nth-child(5n) {
+        color: yellow;
+      }
